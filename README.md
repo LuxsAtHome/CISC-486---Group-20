@@ -66,4 +66,9 @@ E                    interact
 Mousewheel           change weapons  
 ESC                  pause to menu  
 
-## Project Setup aligned to course topics
+## Project Setup/Team Plan
+Unity (6.0)
+
+Physics materials and layers configured in Project Settings
+
+GitHub repository with regular commits and meaningful messages  
