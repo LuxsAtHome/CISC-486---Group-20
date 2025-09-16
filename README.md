@@ -6,11 +6,11 @@ Whirlpool is a 3D Action First-Person Shooter where the player controls a charac
 ## Core Gameplay
 
 ## Game Type
-Action FPS
+Action FPS.
 
 ## Player Setup
-In single player, you control the main character in a first-person view
-In online multiplayer, each player controls their own character and they fight amongst themselves
+In single player, you control the main character in a first-person view.
+In online multiplayer, each player controls their own character and they fight amongst themselves.
 
 ## AI Design
 
