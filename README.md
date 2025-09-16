@@ -22,5 +22,13 @@ Whirlpool is a 3D Action First-Person Shooter where the player controls a charac
 ## Systems and Mechanics
 
 ## Controls (proposed)
+W A S D              move
+Mouse                look 
+Left mouse button    shoot
+Space                jump 
+Shift                sprint
+E                    interact
+Mousewheel           change weapons
+ESC                  pause to menu
 
 ## Project Setup aligned to course topics
