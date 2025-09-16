@@ -31,9 +31,12 @@ Upon completing the game, the player’s playtime is displayed and, if it’s fa
 
 The environment would be meant to resemble an underwater temple, which is segmented off into different rooms and areas.
 
+There will be an attempt to create the models necessary to build the environment ourselves, but for more complicated objects (and enemies) free-to-use assets or 2D sprites mapped to a 3D object will be employed instead.
+
 ## Physics Scope
 
 The physics, at least in concept, will have somewhat of a floaty feeling to mimic the sensation of being underwater. To what extent this will play out is currently undecided, as the game still needs to be responsive and easy to move around in.
+
 This is more of a flourish than a required element, however. If there is not time to implement this in a way that feels nice, more traditional FPS physics will be used instead.
 
 ## FSM Scope
