@@ -1,4 +1,4 @@
-# CISC-486---Group-20
+# WHIRLPOOL
 
 ## Overview
 
