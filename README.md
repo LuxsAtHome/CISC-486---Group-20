@@ -16,7 +16,7 @@ Action FPS
 
 Certain areas will be blocked off via collectable keys or enemy arenas, which would force the player to progress through specific segments before gaining additional access in the environment.
 
-The end of the level will have a major boss, which, when defeated, with either immediately end the game or unlock access to an object which, when interacted with, ends the game.
+The end of the level will have a major boss, which, when defeated, which either immediately end the game or unlock access to an object which ends the game when interacted with.
 
 Upon completing the game, the player’s playtime is displayed and, if it’s fast enough, saved as their “best time.”
 
