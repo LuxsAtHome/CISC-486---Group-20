@@ -43,6 +43,19 @@ This is more of a flourish than a required element, however. If there is not tim
 
 ## Systems and Mechanics
 
+The major systems at play are as follows:
+
+Attacking with your (presumably ranged) weapon, and the collision of those attacks.
+
+Enemies that can move, attack and deal damage at specific (or random) intervals, and be killed by the player.
+
+The collection of items that can either benefit the player (such as healing their health) or unlock access to additional areas.
+
+Areas of the map that gate progression behind beating a specific subset of the game’s total enemies.
+
+The recording of the player’s completion time, as well as a points system based on items collected and total enemies beaten.
+
+
 ## Controls (proposed)
 W A S D              move  
 Mouse                look  
