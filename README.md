@@ -17,6 +17,14 @@ In single player, you control the main character in a first-person view.
 In online multiplayer, each player controls their own character and they fight amongst themselves.
 
 ## AI Design
+The main entities with AI in this game would be the game’s enemies. 
+
+There will be two major types of enemies: a melee enemy which will try and rush the player when they get too close, and an enemy with a ranged attack which will periodically shoot at the player and attempt to dodge their attacks. 
+
+Additionally, there will be a boss that will switch between both attacking styles randomly in order to disorient the player and provide a more challenging encounter.
+
+Any additional enemy AIs we add will all be variations on these three concepts.
+
 
 ## Scripted Events
 
