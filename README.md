@@ -93,6 +93,10 @@ ESC                  pause to menu
 ## 🌊Project Setup/Team Plan
 Unity (6.0)
 
+C# Scripts
+
+Animation controllers for playable character and enemies.
+
 Physics materials and layers configured in Project Settings.
 
 GitHub repository with regular commits and meaningful messages.
