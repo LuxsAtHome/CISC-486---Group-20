@@ -55,7 +55,7 @@ Enemies will switch between three states. “Passive,” where they largely stan
 
 Doors will have an “open”, “locked”, and “closed” state. Most doors start as “closed” by default, and can be opened either by the player directly interacting with the door itself or by the player passing a certain location on the map. “Locked” doors will require you to find a key somewhere on a map or defeat certain enemies in order to open the door.
 
-Items will have a “not collected” and “collected” state in order to prevent the player from infinitely adding them to their inventory. Items such as door keys will have unique “collected” states which will allow you to open relevant “locked” doors, but otherwise this state is functionally unique to the normal collected state mechanically speaking.
+Items will have a “not collected” and “collected” state in order to prevent the player from infinitely adding them to their inventory. Items such as door keys will have unique “collected” states which will allow you to open relevant “locked” doors, but otherwise this state is largely similar to the normal collected state mechanically speaking.
 
 
 ## Systems and Mechanics
