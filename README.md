@@ -15,7 +15,7 @@ Endgame: When the boss is defeated, the player either triggers the game ending o
 
 ## 🌊Game Type
 
-Action First Person Shooter.
+Action First-Person Shooter.
 
 ## 🌊Player Setup
 
