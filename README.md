@@ -58,7 +58,7 @@ This is more of a flourish than a required element, however. If there is not tim
 
 The scope of the Finite State Machines are as follows:
 
-Enemies will switch between three states. “Passive,” where they largely stand in place or patrol a set area; “Hostile”, where they attempt to attack the player; and “Dead”, where the enemy is replaced by an unmoving and harmless corpse sprite.
+Enemies will switch between three states. “Passive,” where they largely stand in place or patrol a set area; “Hostile”, where they attempt to attack the player; and “Dead”, where the enemy is replaced by an unmoving and harmless corpse sprite. The major boss entity will largely function identically to the standard enemy FSM as well.
 
 Doors will have an “open”, “locked”, and “closed” state. Most doors start as “closed” by default, and can be opened either by the player directly interacting with the door itself or by the player passing a certain location on the map. “Locked” doors will require you to find a key somewhere on a map or defeat certain enemies in order to open the door.
 
