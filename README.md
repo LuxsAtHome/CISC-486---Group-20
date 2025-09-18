@@ -5,6 +5,13 @@
 Whirlpool is a 3D Action First-Person Shooter where the player controls a character in an underwater world where they have to fight their way through levels filled with fishy foes.
 
 ## Core Gameplay
+Players dive through a series of flooded temple chambers while battling sea creatures.   
+
+Combat: Use a variety of ranged weapons to defeat enemies, from basic harpoons to high-tech underwater weapons.  
+
+Progression: Collect key items or defeat specific enemy waves to unlock sealed areas and advance through the temple.  
+
+Endgame: When the boss is defeated, the player either triggers the game ending or unlocks a final relic that ends the game on interaction. The completion time is recorded and compared to the best times of players.  
 
 ## Game Type
 
