@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 96903223b7e13344db6bd55f932db1c8
+guid: a2f173e602352054b932f09a4199bfe7
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Fish_Enemy_Idle_0
+      name: Fish_Enemy_Chasing_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 85
-        height: 39
+        width: 49
+        height: 49
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -125,20 +125,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 576449f6eb8dca54680a0a2f3652ce5a
-      internalID: -1678841054
+      spriteID: f6c1b1cd740fb134b8815d9ae9c70583
+      internalID: -1306998515
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fish_Enemy_Idle_1
+      name: Fish_Enemy_Chasing_1
       rect:
         serializedVersion: 2
-        x: 85
+        x: 49
         y: 0
-        width: 85
-        height: 39
+        width: 49
+        height: 49
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -147,20 +147,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ac0c4892a8eec594aaa58e635ee205b3
-      internalID: 1204872831
+      spriteID: 59c366f9ec7a3dd4abbbc850dec4a2b3
+      internalID: -286467016
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fish_Enemy_Idle_2
+      name: Fish_Enemy_Chasing_2
       rect:
         serializedVersion: 2
-        x: 170
+        x: 98
         y: 0
-        width: 85
-        height: 39
+        width: 49
+        height: 49
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -169,20 +169,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bba566fc98ae85a46aca696ae9b996d0
-      internalID: 669493478
+      spriteID: 55eaab99023497345b6c99b4b9abd2c2
+      internalID: -113171469
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fish_Enemy_Idle_3
+      name: Fish_Enemy_Chasing_3
       rect:
         serializedVersion: 2
-        x: 255
+        x: 147
         y: 0
-        width: 85
-        height: 39
+        width: 49
+        height: 49
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -191,8 +191,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7063bd218bfb3b945bcace69bf9e6e26
-      internalID: 450092145
+      spriteID: 472b73103c509e840a6f770d660ccc2e
+      internalID: -199651847
       vertices: []
       indices: 
       edges: []
@@ -201,7 +201,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 62cdb044168f7c548a7248864180b842
+    spriteID: 1fad793d12edc9b4faa2712e0fc2006b
     internalID: 0
     vertices: []
     indices: 
@@ -211,12 +211,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":1.0},"gridSpriteSize":{"x":85.0,"y":39.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":1.0},"gridSpriteSize":{"x":49.0,"y":49.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Fish_Enemy_Idle_0: -1678841054
-      Fish_Enemy_Idle_1: 1204872831
-      Fish_Enemy_Idle_2: 669493478
-      Fish_Enemy_Idle_3: 450092145
+      Fish_Enemy_Chasing_0: -1306998515
+      Fish_Enemy_Chasing_1: -286467016
+      Fish_Enemy_Chasing_2: -113171469
+      Fish_Enemy_Chasing_3: -199651847
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
