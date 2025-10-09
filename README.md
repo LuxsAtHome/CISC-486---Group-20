@@ -123,4 +123,6 @@ The finite state machine for the standard fish enemy currently contains four sta
 <img align="center" src="ReadmeImages/FishFSM.png" width="700">
 </p>
 
+Youtube video showcasing the fish enemy in action: https://www.youtube.com/watch?v=MsQNYEW6u8U
+
 
