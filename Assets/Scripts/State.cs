@@ -24,9 +24,9 @@ public class State
     protected State nextState;
     protected NavMeshAgent agent;
 
-    float visDist = 10.0f;
-    float visAngle = 30.0f;
-    float attackDist = 3.0f;
+    float visDist = 7.0f;
+    float visAngle = 360.0f;
+    float attackDist = 2.0f;
 
     public State(GameObject _npc, NavMeshAgent _agent, Animator _anim, Transform _player)
     {
@@ -188,11 +188,11 @@ public class Chase : State
         if (agent.hasPath)
         {
             // CURRENTLY COMMENTED OUT BECAUSE ATTACKING HAS NOT BEEN IMPLEMENTED
-            // if (CanAttackPlayer())
-            // {
-            //     nextState = new Attack(npc, agent, anim, player);
-            //     stage = EVENT.EXIT;
-            // }
+            if (CanAttackPlayer())
+            {
+                nextState = new Attack(npc, agent, anim, player);
+                stage = EVENT.EXIT;
+            }
             if (!CanSeePlayer())
             {
                 nextState = new Patrol(npc, agent, anim, player);
@@ -236,7 +236,13 @@ public class Attack : State
 
         if (!CanAttackPlayer())
         {
-            nextState = new Idle(npc, agent, anim, player);
+            nextState = new Chase(npc, agent, anim, player);
+            stage = EVENT.EXIT;
+        }
+
+        if (!CanSeePlayer())
+        {
+            nextState = new Patrol(npc, agent, anim, player);
             stage = EVENT.EXIT;
         }
     }
