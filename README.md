@@ -105,3 +105,22 @@ Readme and in game debug UI showing FPS, state names, and safety meter for asses
 
 Weekly meetings to discuss the project and assign tasks.
 
+## 🌊Finite State Machine Implementation
+The finite state machine for the standard fish enemy currently contains four states. Tese states are FishIdle, FishPatrol, FishAttack, and FishChase.
+
+- While in the FishIdle state, the enemy does not move in any way. This is largely a transitory state, as most enemies will quickly switch to FishPatrol and FishChase
+
+- While in the FishPatrol state, the enemy will move on a set path until the player gets close enough to activate the FishChase state.
+
+- While in the FishChase state, the enemy will attempt to get as close as possible until the player is able to be damaged by its attack.
+ 
+- While in the FishAttacks state, the enemy stays in place and deals damage if the player is too close.
+
+  An additional "FishDead" state will be implemented later on, which will prevent the enemy from moving or harming the player when it takes enough damage.
+
+
+<p align="center">
+<img align="center" src="ReadmeImages\FishFSM .jpg" width="700">
+</p>
+
+
