@@ -120,7 +120,7 @@ The finite state machine for the standard fish enemy currently contains four sta
 
 
 <p align="center">
-<img align="center" src="ReadmeImages\FishFSM .jpg" width="700">
+<img align="center" src="ReadmeImages/FishFSM.png" width="700">
 </p>
 
 
