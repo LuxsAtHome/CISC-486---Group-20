@@ -118,6 +118,8 @@ The finite state machine for the standard fish enemy currently contains four sta
 
   An additional "FishDead" state will be implemented later on, which will prevent the enemy from moving or harming the player when it takes enough damage. As it currently is not implemented, there are no transitions that will let you enter this state.
 
+## 🌊Descision Tree and Pathfinding
+
 
 <p align="center">
 <img align="center" src="ReadmeImages/FishFSM.png" width="700">
