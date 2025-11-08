@@ -40,6 +40,7 @@ public class EnemyDecisionTreeController : MonoBehaviour
 
     void Start()
     {
+        anim.SetTrigger("isIdle");
         BuildTree();
         if (patrolPoints != null && patrolPoints.Length > 0)
             agent.SetDestination(patrolPoints[patrolIndex].position);
@@ -66,6 +67,7 @@ public class EnemyDecisionTreeController : MonoBehaviour
 
     void Patrol()
     {
+        anim.SetTrigger("isSwimming");
         agent.isStopped = false;
         if (patrolPoints == null || patrolPoints.Length == 0) return;
 
@@ -83,6 +85,7 @@ public class EnemyDecisionTreeController : MonoBehaviour
 
     void Chase()
     {
+        anim.SetTrigger("isChasing");
         agent.isStopped = false;
         var pos = detection.player.position;
         if (agent.destination != pos) agent.SetDestination(pos);
@@ -103,7 +106,7 @@ public class EnemyDecisionTreeController : MonoBehaviour
 
         if (Time.time >= nextAttackTime)
         {
-            if (anim) anim.SetTrigger("Attack");
+            if (anim) anim.SetTrigger("isAttacking");
             nextAttackTime = Time.time + attackCooldown;
         }
     }
