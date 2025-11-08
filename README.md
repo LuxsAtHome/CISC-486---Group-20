@@ -123,11 +123,13 @@ The finite state machine for the standard fish enemy currently contains four sta
 <img align="center" src="ReadmeImages/FishFSM.png" width="700">
 </p>
 
-Youtube video showcasing the fish enemy in action: https://www.youtube.com/watch?v=MsQNYEW6u8U
+Assignment 2 Youtube video showcasing the fish enemy in action: https://www.youtube.com/watch?v=MsQNYEW6u8U
 
 ## 🌊Descision Tree and Pathfinding
 
 Due to the work we completed in Assignment 2, and due to the relative vagueness of the information surrounding this assignment, so coming up with new features for the decision tree were difficult. A majority of our enemy’s decision-making needs were already covered by the FSM, and we implemented path finding alongside Assignment 2. While we started working on a decision tree, it took us a very long time to figure out how to implement so our output was fairly limited in scope.
 
 To compensate for this, we focused a lot on the completion of the game-space. In addition to the locked door mechanic that was discussed in Assignment 1, the map of the game is now complete, barring future revisions based on what’s needed for the game.
+
+Assignment 3 Youtube video showcasing the fish enemy built on decision trees with pathfinding: https://youtu.be/JVIenMAAuNE
 
