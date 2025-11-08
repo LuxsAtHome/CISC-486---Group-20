@@ -1,66 +1,43 @@
 using UnityEngine;
 using UnityEngine.AI;
 
+[RequireComponent(typeof(NavMeshAgent))]
 public class PlayerDetection : MonoBehaviour
 {
     GameObject npc;
-    NavMeshAgent agent;
-    Animator anim;
+    public NavMeshAgent agent;
+    public Animator anim;
     public Transform player;
-    float visDist = 7.0f;
-    float visAngle = 360.0f;
-    float attackDist = 2.0f;
-    float rotationSpeed = 2.0f;
 
+    [Header("Perception")]
+    public float visDist = 12f;
+    public float visAngle = 60f;   
+    public float attackDist = 2.2f;
+
+    void Awake()
+    {
+        npc = gameObject;
+        agent = GetComponent<NavMeshAgent>();
+        anim = GetComponent<Animator>();
+    }
 
     public bool CanSeePlayer()
     {
-        Vector3 direction = player.position - npc.transform.position;
-        float angle = Vector3.Angle(direction, npc.transform.forward);
+        if (!player) return false;
+        Vector3 dir = player.position - npc.transform.position;
+        if (dir.magnitude > visDist) return false;
+        if (Vector3.Angle(npc.transform.forward, dir) > visAngle) return false;
 
-        if (direction.magnitude < visDist && angle < visAngle)
+        if (Physics.Raycast(npc.transform.position + Vector3.up, dir.normalized, out var hit, visDist))
         {
-            return true;
+            if (hit.transform != player) return false;
         }
-        return false;
+        return true;
     }
 
     public bool CanAttackPlayer()
     {
-        Vector3 direction = player.position - npc.transform.position;
-        if (direction.magnitude < attackDist)
-        {
-            return true;
-        }
-        return false;
-    }
-
-
-
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        agent = this.GetComponent<NavMeshAgent>();
-        anim = this.GetComponent<Animator>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (CanAttackPlayer())
-        {
-            Vector3 direction = player.position - npc.transform.position;
-            float angle = Vector3.Angle(direction, npc.transform.forward);
-            direction.y = 0;
-
-            npc.transform.rotation = Quaternion.Slerp(npc.transform.rotation,
-            Quaternion.LookRotation(direction),
-            Time.deltaTime * rotationSpeed);
-        }
-        else if (CanSeePlayer())
-        {
-            agent.SetDestination(player.position);
-        }
+        if (!player) return false;
+        return Vector3.Distance(player.position, npc.transform.position) <= attackDist;
     }
 }
