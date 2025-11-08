@@ -127,7 +127,9 @@ Youtube video showcasing the fish enemy in action: https://www.youtube.com/watch
 
 ## 🌊Descision Tree and Pathfinding
 
-Due to the work we completed in Assignment 2, and due to the relative vagueness of the information surrounding this assignment, so coming up with new features for the decision tree were difficult. A majority of our enemy’s decision-making needs were already covered by the FSM, and we implemented path finding alongside Assignment 2. While we started working on a decision tree, we could not figure out how to fully implement in a timely manner and had to instead design an FSM for a new enemy.
+Due to the work we completed in Assignment 2, and due to the relative vagueness of the information surrounding this assignment, so coming up with new features for the decision tree were difficult. A majority of our enemy’s decision-making needs were already covered by the FSM, and we implemented path finding alongside Assignment 2. While we started working on a decision tree, we could not figure out how to fully implement in a timely manner and decided to instead design an FSM for a new enemy. 
+
+This enemy, a hostile diver, operates similar to the fish enemy's FSM, but instead of patroling a set path it remains stationary and instead of charging into the player it moves randomly and attacks from a distance after a brief time interval passes.
 
 To compensate for the, we focused a lot on the completion of the game-space. In addition to the locked door mechanic that was discussed in Assignment 1, the map of the game is now complete, barring future revisions based on what’s needed for the game.
 
