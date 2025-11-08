@@ -131,5 +131,5 @@ Due to the work we completed in Assignment 2, and due to the relative vagueness 
 
 This enemy, a hostile diver, operates similar to the fish enemy's FSM, but instead of patroling a set path it remains stationary and instead of charging into the player it moves randomly and attacks from a distance after a brief time interval passes.
 
-To compensate for the, we focused a lot on the completion of the game-space. In addition to the locked door mechanic that was discussed in Assignment 1, the map of the game is now complete, barring future revisions based on what’s needed for the game.
+To compensate for the inability to complete a descision tree, we focused a lot on the completion of the game-space. In addition to the locked door mechanic that was discussed in Assignment 1, the map of the game is now complete, barring future revisions based on what’s needed for the game.
 
