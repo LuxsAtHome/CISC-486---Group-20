@@ -211,6 +211,8 @@ public class Chase : State
 public class Attack : State
 {
     float rotationSpeed = 2.0f;
+    float attackSpeed = 1.0f;
+    float attackTime;
     public Attack(GameObject _npc, NavMeshAgent _agent, Animator _anim, Transform _player)
     : base(_npc, _agent, _anim, _player)
     {
@@ -221,6 +223,7 @@ public class Attack : State
     {
         anim.SetTrigger("isAttacking");
         agent.isStopped = true;
+        player.GetComponent<PlayerHealth>().TakeDamage(5);
         base.Enter();
     }
 
@@ -233,6 +236,12 @@ public class Attack : State
         npc.transform.rotation = Quaternion.Slerp(npc.transform.rotation,
         Quaternion.LookRotation(direction),
         Time.deltaTime * rotationSpeed);
+
+        attackTime += Time.deltaTime;
+        if (attackTime > attackSpeed){
+            player.GetComponent<PlayerHealth>().TakeDamage(5);
+            attackTime = 0;
+        }
 
         if (!CanAttackPlayer())
         {

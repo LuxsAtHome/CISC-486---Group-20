@@ -67,7 +67,6 @@ public class EnemyDecisionTreeController : MonoBehaviour
 
     void Patrol()
     {
-        anim.SetTrigger("isSwimming");
         agent.isStopped = false;
         if (patrolPoints == null || patrolPoints.Length == 0) return;
 
@@ -79,6 +78,7 @@ public class EnemyDecisionTreeController : MonoBehaviour
                 waitTimer = 0f;
                 patrolIndex = (patrolIndex + 1) % patrolPoints.Length;
                 agent.SetDestination(patrolPoints[patrolIndex].position);
+                anim.SetTrigger("isSwimming");
             }
         }
     }
@@ -106,6 +106,7 @@ public class EnemyDecisionTreeController : MonoBehaviour
 
         if (Time.time >= nextAttackTime)
         {
+            detection.player.GetComponent<PlayerHealth>().TakeDamage(5);
             if (anim) anim.SetTrigger("isAttacking");
             nextAttackTime = Time.time + attackCooldown;
         }
